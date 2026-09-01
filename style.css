@@ -144,7 +144,7 @@ body {
    .grass span {
     display: block;
     width: 8px;
-    height: 70px;
+    height: 200px;
     background: #07150d;
 
     clip-path: polygon(
