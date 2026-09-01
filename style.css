@@ -6,15 +6,18 @@
 .para{
     font: 40px;
 }
-.moon {
-    position: absolute;
+.moon{box-shadow:
+    0 0 20px #fffde8,
+        0 0 60px #fffde8,
+        0 0 100px #fffde8;
+       position: absolute;
     width: 90px;
     height: 90px;
     border-radius: 50%;
     background: #fff;
     top: 8%;
     right: 10%;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.35);
+   
 }
 .fog {
     position: absolute;
@@ -24,9 +27,9 @@
     height: 30%;
     background: linear-gradient(
         transparent,
-        rgba(180, 190, 190, 0.08)
+        rgba(21, 219, 219, 0.08)
     );
-    filter: blur(15px);
+    filter: blur(5px);
 }
 .tree {
     position: absolute;
@@ -36,6 +39,62 @@
     border-left: 45px solid transparent;
     border-right: 45px solid transparent;
     border-bottom: 140px solid #07110d;
+}
+.cloud {
+    position: absolute;
+    width: 230px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(20, 30, 30, .45);
+    filter: blur(8px);
+     box-shadow: 0 0 40px rgba(255, 255, 255, 0.35);
+
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.cloud::before {
+    width: 100px;
+    height: 70px;
+    left: 35px;
+    top: -25px;
+}
+
+.cloud::after {
+    width: 120px;
+    height: 60px;
+    right: 20px;
+    top: -15px;
+}
+
+.cloud1 {
+    top: 18%;
+    left: -250px;
+    animation: cloudMove 45s linear infinite;
+}
+
+.cloud2 {
+    top: 32%;
+    left: -300px;
+    transform: scale(.7);
+    opacity: .5;
+    animation: cloudMove 65s linear infinite;
+}
+
+@keyframes cloudMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 500px));
+    }
 }
 
 body {
@@ -68,7 +127,108 @@ body {
         );
 }
 
+.grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+   .grass span {
+    display: block;
+    width: 8px;
+    height: 70px;
+    background: #07150d;
+
+    clip-path: polygon(
+        50% 0%,
+        100% 100%,
+        0% 100%
+    );
+
+    transform-origin: bottom;
+    animation: grassWind 2s ease-in-out infinite;
+}
+
+.grass span:nth-child(2) {
+    height: 50px;
+    animation-delay: .2s;
+}
+
+.grass span:nth-child(3) {
+    height: 85px;
+    animation-delay: .4s;
+}
+
+.grass span:nth-child(4) {
+    height: 60px;
+    animation-delay: .6s;
+}
+
+.grass span:nth-child(5) {
+    height: 75px;
+    animation-delay: .8s;
+}
+
+.grass span:nth-child(6) {
+    height: 55px;
+    animation-delay: 1s;
+}
+
+.grass span:nth-child(7) {
+    height: 90px;
+    animation-delay: .3s;
+}
+
+.grass span:nth-child(8) {
+    height: 65px;
+    animation-delay: .7s;
+}
+
+.grass span:nth-child(9) {
+    height: 80px;
+    animation-delay: .5s;
+}
+
+.grass span:nth-child(10) {
+    height: 45px;
+    animation-delay: .9s;
+}
+
+.grass span:nth-child(odd) {
+    animation-name: grassLeft;
+}
+
+.grass span:nth-child(even) {
+    animation-name: grassRight;
+}
+
+@keyframes grassLeft {
+    0%,100% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes grassRight {
+    0%,100% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+}
 /* =========================================
    FIREFLIES
 ========================================= */
