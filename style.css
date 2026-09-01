@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.para{
+    font: 40px;
+}
 
 body {
     font-family: Georgia, "Times New Roman", serif;
@@ -66,8 +69,8 @@ body {
 
     box-shadow:
         0 0 5px #f7f39a,
-        0 0 12px #edf080,
-        0 0 22px rgba(240, 240, 120, 0.7);
+        0 0 22px #edf080,
+        0 0 42px rgba(240, 240, 120, 0.7);
 
     /*
        শুধু এই animation-ই movement
@@ -91,49 +94,49 @@ body {
 .f2 {
     left: 15%;
     top: 55%;
-    animation-delay: 2s;
+    animation-delay: 1.2s;
 }
 
 .f3 {
     left: 25%;
     top: 75%;
-    animation-delay: 4s;
+    animation-delay: 1.4s;
 }
 
 .f4 {
     left: 35%;
     top: 30%;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 .f5 {
     left: 45%;
     top: 65%;
-    animation-delay: 5s;
+    animation-delay: 0.5s;
 }
 
 .f6 {
     left: 55%;
     top: 40%;
-    animation-delay: 3s;
+    animation-delay: 2.7s;
 }
 
 .f7 {
     left: 65%;
     top: 75%;
-    animation-delay: 6s;
+    animation-delay: 0.6s;
 }
 
 .f8 {
     left: 75%;
     top: 25%;
-    animation-delay: 2.5s;
+    animation-delay: 1.2s;
 }
 
 .f9 {
     left: 85%;
     top: 60%;
-    animation-delay: 5.5s;
+    animation-delay: 3.5s;
 }
 
 .f10 {
@@ -145,61 +148,61 @@ body {
 .f11 {
     left: 10%;
     top: 20%;
-    animation-delay: 4.5s;
+    animation-delay: 2.8s;
 }
 
 .f12 {
     left: 20%;
     top: 40%;
-    animation-delay: 7s;
+    animation-delay: 0.7s;
 }
 
 .f13 {
     left: 30%;
     top: 90%;
-    animation-delay: 3.5s;
+    animation-delay: 1.5s;
 }
 
 .f14 {
     left: 50%;
     top: 15%;
-    animation-delay: 6.5s;
+    animation-delay: 1s;
 }
 
 .f15 {
     left: 60%;
     top: 55%;
-    animation-delay: 1.8s;
+    animation-delay: 0.8s;
 }
 
 .f16 {
     left: 70%;
     top: 85%;
-    animation-delay: 4.8s;
+    animation-delay: 2.3s;
 }
 
 .f17 {
     left: 80%;
     top: 15%;
-    animation-delay: 7.5s;
+    animation-delay: 0.5s;
 }
 
 .f18 {
     left: 90%;
     top: 75%;
-    animation-delay: 3.2s;
+    animation-delay: 0.2s;
 }
 
 .f19 {
     left: 40%;
     top: 50%;
-    animation-delay: 5.8s;
+    animation-delay: 0.8s;
 }
 
 .f20 {
     left: 8%;
     top: 65%;
-    animation-delay: 8s;
+    animation-delay: 2.7s;
 }
 
 
@@ -217,8 +220,7 @@ body {
             0 0 2px #f7f39a,
             0 0 5px #edf080;
     }
-
-    20% {
+20% {
         transform: translate(25px, -20px);
         opacity: 1;
 
@@ -227,6 +229,7 @@ body {
             0 0 12px #edf080,
             0 0 20px rgba(240, 240, 120, 0.7);
     }
+    
 
     40% {
         transform: translate(-35px, -45px);
@@ -246,8 +249,7 @@ body {
             0 0 2px #f7f39a,
             0 0 5px #edf080;
     }
-
-    80% {
+80% {
         transform: translate(-25px, -65px);
         opacity: 0;
 
@@ -256,6 +258,7 @@ body {
             0 0 18px #edf080,
             0 0 30px rgba(240, 240, 120, 0.8);
     }
+  
 
   
 
